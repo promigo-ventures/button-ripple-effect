@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: aliceblue;
+  font-family: sans-serif;
+}
+
+.ripple {
+  text-align: center;
+}
+
+.ripple-btn {
+  margin-top: 40px;
+}
+
+h1 {
+  color: orangered;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: pink;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  background-color: orangered;
+  width: 0;
+  height: 0;
+  left: var(--xPos, 50%);
+  top: var(--yPos, 50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.4s ease, height 0.4s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover::before {
+  width: 200px;
+  height: 200px;
+}
+.btn:active::before {
+  width: 0;
+  height: 0;
+}
