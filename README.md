@@ -4,9 +4,8 @@ This project showcases a **modern and visually engaging ripple effect** on a but
 
 ## 📸 Demo
 
-![Ripple Effect Demo](https://github.com/promigo-ventures/button-ripple-effect/assets/your-github-username/demo.gif)
+[![Watch the video](https://img.youtube.com/vi/S3nHAJnwiqY/0.jpg)](https://www.youtube.com/watch?v=S3nHAJnwiqY)
 
-Or [watch the video demo](https://your-youtube-demo-link.com)
 
 ## ✨ Features
 
